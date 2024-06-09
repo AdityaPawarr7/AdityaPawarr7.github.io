@@ -262,28 +262,32 @@
 			 
 		 </script>
 
-		      <h4 class="mb-3">XKCD Comic Info:</h4>
-		      <div id="comic-info">Loading comic info...</div>
-		     <script>
-			  $(document).ready(function() {
-			    function displayComicInfo(data) {
-			      $("#comic-info").html(`
-			        <h2>${data.title}</h2>
-			        <img src="${data.img}" alt="${data.alt}">
-			        <p>${data.alt}</p>
-			        <p>Published: ${data.year}-${data.month}-${data.day}</p>
-			      `);
-			    }
-			
-			    $.getJSON("xkcd.php", function(data) {
-			      displayComicInfo(data);
-			    })
-			    .fail(function() {
-			      $("#comic-info").html("Failed to fetch comic information.");
-			    });
-			  });
-			</script>
+		<h4 class="mb-3">XKCD Comic Info:</h4>
+		<div id="comic-info">Loading comic info...</div>
 		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+		  $(document).ready(function() {
+		    function displayComicInfo(data) {
+		      $("#comic-info").html(`
+		        <h2>${data.title}</h2>
+		        <img src="${data.img}" alt="${data.alt}">
+		        <p>${data.alt}</p>
+		        <p>Published: ${data.year}-${data.month}-${data.day}</p>
+		      `);
+		    }
+		
+		    // Use the CORS proxy to fetch the data
+		    $.getJSON("https://cors-anywhere.herokuapp.com/https://xkcd.com/info.0.json", function(data) {
+		      console.log(data);  // Log the response data
+		      displayComicInfo(data);
+		    })
+		    .fail(function() {
+		      $("#comic-info").html("Failed to fetch comic information.");
+		    });
+		  });
+		</script>
+
 					
                 </div>
          </section>
