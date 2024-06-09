@@ -263,29 +263,29 @@
 		 </script>
 
 		<h4 class="mb-3">XKCD Comic Info: </h4>
-		  <div id="comic-info"> </div>
-		  <script>
-		    $(document).ready(function() {
-		      // Function to display comic information
-		      function displayComicInfo(data) {
-		        $("#comic-info").html(`
-		          <h2>${data.title}</h2>
-		          <img src="${data.img}" alt="${data.alt}">
-		          <p>${data.alt}</p>
-		          <p>Published: ${data.pubDate}</p>
-		        `);
-		      }
-		
-		      // Fetch comic information using jQuery
-		      $.get("https://xkcd.com/info.0.json", function(data) {
-		        displayComicInfo(data);
-		      })
-		      .fail(function() {
-		        $("#comic-info").html("Failed to fetch comic information.");
-		      });
-		    });
-	  	  </script>
 
+		<div id="comic-info"></div>
+		<script>
+		  $(document).ready(function() {
+		    function displayComicInfo(data) {
+		      $("#comic-info").html(`
+		        <h2>${data.title}</h2>
+		        <img src="${data.img}" alt="${data.alt}">
+		        <p>${data.alt}</p>
+		        <p>Published: ${data.year}-${data.month}-${data.day}</p>
+		      `);
+		    }
+		
+		    $.getJSON("https://xkcd.com/info.0.json", function(data) { // Use .getJSON for consistency
+		      displayComicInfo(data);
+		    })
+		    .fail(function() {
+		      $("#comic-info").html("Failed to fetch comic information.");
+		    });
+		  });
+		</script>
+
+			
                 </div>
          </section>
 
