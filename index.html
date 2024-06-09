@@ -249,7 +249,7 @@
 		<h4 class="mb-3">Joke of the Day:</h4>
 			
 		 <div id="response">Loading joke...</div>
-		 <script type="text/javascript">
+		 <script>
 		  function getJoke() {
 	            $.get("https://v2.jokeapi.dev/joke/Any?type=single", function (result) {
 	                $("#response").html("A Random Joke: " + result.joke);
