@@ -345,7 +345,7 @@
 		    if (!username) {
 		        // First time visit
 		        alert('Welcome to my homepage!');
-		        setCookie("username", "", 365); // Setting empty string as value
+		        setCookie("username", "YOURUsername", 365); // Setting empty string as value
 		        setCookie("lastVisitDate", currentDate, 365); 
 		    } else {
 		        // Revisit
@@ -357,10 +357,7 @@
 		
 		// Display welcome message on page load
 		window.onload = displayWelcomeMessage;
-
 	  
-
-
 
        </script>
 
