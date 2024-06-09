@@ -245,28 +245,29 @@
 		        <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
 		        <script src="https://waph-uc.github.io/clock.js"></script>
 
-                <h4 class="mb-3">Joke of the Day: </h4>
-
-                <script type="text/javascript">
-                 function getJoke() {
-
-                    $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
-				    function(result){
-
-                        if(result!=null && result.joke){
-                            console.log("From jokeAPI: "+ JSON.stringify(result));
-                            $("#response").html("A programming joke of the day: " +encodeInput(result.joke));
-
-                        }
-				    	else{
-                            $("#response").html("Failed to fetch joke from jokeAPI.");
-
-                        }
-                    });
-                  }
-                setInterval(getJoke, 60000); 
-                getJoke();
-                </script>
+               
+		<h4 class="mb-3">Joke of the Day:</h4>
+			
+		 <div id="response">Loading joke...</div>
+		 <script type="text/javascript">
+		        function getJoke() {
+		          $.get("https://v2.jokeapi.dev/joke/Programming?type=single")
+		            .done(function(result) {
+		              if (result && result.joke) {
+		                console.log("From jokeAPI: " + JSON.stringify(result));
+		                $("#response").html("A Random Joke: " + result.joke);
+		              } else {
+		                $("#response").html("Failed to fetch joke from jokeAPI.");
+		              }
+		            })
+		            .fail(function() {
+		              $("#response").html("Failed to fetch joke from jokeAPI.");
+		            });
+		        }
+		
+		        setInterval(getJoke, 60000);
+		        getJoke();
+		 </script>
 
                 </div>
          </section>
