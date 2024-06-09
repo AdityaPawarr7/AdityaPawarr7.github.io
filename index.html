@@ -262,32 +262,36 @@
 			 
 		 </script>
 
-		<h4 class="mb-3">XKCD Comic Info:</h4>
-		<div id="comic-info">Loading comic info...</div>
+		 
+		    <h4 class="mb-3">Current Weather Info:</h4>
+		    <div id="weather-info">Loading weather info...</div>
+		  </div>
 		
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script>
-		  $(document).ready(function() {
-		    function displayComicInfo(data) {
-		      $("#comic-info").html(`
-		        <h2>${data.title}</h2>
-		        <img src="${data.img}" alt="${data.alt}">
-		        <p>${data.alt}</p>
-		        <p>Published: ${data.year}-${data.month}-${data.day}</p>
-		      `);
-		    }
+		  <script>
+		    $(document).ready(function() {
+		      const apiKey = '6533ca69257e4792a33a9006602d3a96';
+		      const city = 'Cincinnati'; // City name
+		      const country = 'US'; // Country code
 		
-		    // Use the CORS proxy to fetch the data
-		    $.getJSON("https://cors-anywhere.herokuapp.com/https://xkcd.com/info.0.json", function(data) {
-		      console.log(data);  // Log the response data
-		      displayComicInfo(data);
-		    })
-		    .fail(function() {
-		      $("#comic-info").html("Failed to fetch comic information.");
+		      function displayWeatherInfo(data) {
+		        const weather = data.data[0];
+		        $("#weather-info").html(`
+		          <h2>Weather in ${weather.city_name}, ${weather.country_code}</h2>
+		          <p>Temperature: ${weather.temp}°C</p>
+		          <p>Description: ${weather.weather.description}</p>
+		          <img src="https://www.weatherbit.io/static/img/icons/${weather.weather.icon}.png" alt="${weather.weather.description}">
+		        `);
+		      }
+		
+		      $.getJSON(`https://api.weatherbit.io/v2.0/current?city=${city}&country=${country}&key=${apiKey}`, function(data) {
+		        console.log(data); // Log the response data
+		        displayWeatherInfo(data);
+		      })
+		      .fail(function() {
+		        $("#weather-info").html("Failed to fetch weather information.");
+		      });
 		    });
-		  });
-		</script>
-
+		  </script>
 					
                 </div>
          </section>
