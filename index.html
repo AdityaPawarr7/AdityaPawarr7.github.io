@@ -234,14 +234,85 @@
                 <h2 class="mb-5">Project 1 Tasks</h2>
                     
 
-                    <h4 class="mb-3">Page Tracker by the Number of Different Countries</h4>
+                    <h4 class="mb-3">Page Tracker by the Number of Different Countries: </h4>
 
                     <a href="http://s11.flagcounter.com/more/wPY"><img src="https://s11.flagcounter.com/count2/wPY/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-                
+
+                <h4 class="mb-3">Digital Clock: </h4>
+                <div id="digital-clock"></div>
+
+                <h4 class="mb-3">Analog Clock: </h4>
+		        <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
+		        <script src="https://waph-uc.github.io/clock.js"></script>
+
+                <h4 class="mb-3">Joke of the Day: </h4>
+
+                <script type="text/javascript">
+                 function getJoke() {
+
+                    $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+				    function(result){
+
+                        if(result!=null && result.joke){
+                            console.log("From jokeAPI: "+ JSON.stringify(result));
+                            $("#response").html("A programming joke of the day: " +encodeInput(result.joke));
+
+                        }
+				    	else{
+                            $("#response").html("Failed to fetch joke from jokeAPI.");
+
+                        }
+                    });
+                  }
+                setInterval(getJoke, 60000); 
+                getJoke();
+                </script>
 
                 </div>
          </section>
-    
+
+
+       <script type="text/javascript">
+
+        function displayTime(){
+				document.getElementById('digital-clock').innerHTML = "Current time:" + new Date();
+			}
+			setInterval(displayTime,500);
+			//code for the analog clock
+			var canvas= document.getElementById("analog-clock");
+			var ctx= canvas.getContext("2d");
+			var radius=canvas.height/2;
+			ctx.translate(radius,radius);
+			radius=radius*0.90;
+			setInterval(drawClock,1000);
+
+			function drawClock(){
+				drawFace(ctx, radius);
+				drawNumbers(ctx, radius);
+				drawTime(ctx, radius);
+			}
+
+           
+        function getJoke() {
+
+            $.get("https://v2.jokeapi.dev/joke/Programming?type=single",
+				function(result){
+
+                    if(result!=null && result.joke){
+                        console.log("From jokeAPI: "+ JSON.stringify(result));
+                        $("#response").html("A programming joke of the day: " +encodeInput(result.joke));
+
+                    }
+					else{
+                        $("#response").html("Failed to fetch joke from jokeAPI.");
+
+                    }
+            });
+        }
+        setInterval(getJoke, 60000); 
+        getJoke();
+        
+       </script>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
