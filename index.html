@@ -269,7 +269,7 @@
 		<br> </br>
 		    <h4 class="mb-3">Current Weather Info:</h4>
 		    <div id="weather-info">Loading weather info...</div>
-		  </div>
+		  
 		
 		  <script>
 		    $(document).ready(function() {
@@ -297,7 +297,7 @@
 		    });
 		  </script>
 					
-                </div>
+                
 
 
 		 <br> </br>
@@ -308,18 +308,20 @@
                 <a href="https://AdityaPawarr7.github.io/waph.html" target="_blank">Click Here to Access the Course
                     Information</a>
 
+		
+		 <br> </br>
+		<h4 class="mt-3">Alpine.js - Functionality of Choice  </h4>
 
-		 <div id="typed-text"></div>
+		<p>  Alpine.js is a lightweight library that allows you to enhance interactivity in your web pages without the need for heavy frameworks. </p>
+		 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+	
+		<div x-data="{ isOpen: false }">
+	 	   <button @click="isOpen = !isOpen">Toggle</button>
+		    <div x-show="isOpen">
+	    	    This content will be shown or hidden based on the value of isOpen.
+	  	  </div>
+		</div>
 
-		 <h4 class="mt-3"> Typed.js - Functionality of Choice </h4>
-		<script>
-		    // Initialize Typed.js
-		    var typed = new Typed('#typed-text', {
-		        strings: ["Welcome to my website!", "Explore my portfolio.", "Contact me for inquiries."],
-		        typeSpeed: 50, // typing speed in milliseconds
-		        loop: true // loop through the strings infinitely
-		    });
-		</script>
 
 		 
          </section>
@@ -393,8 +395,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- Typed.js library -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
 	    
         
     </body>
