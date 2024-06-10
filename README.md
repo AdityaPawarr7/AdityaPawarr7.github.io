@@ -33,9 +33,13 @@ Through this project, I learned important skills in creating a personal portfoli
 
 In this project, I expanded on front-end web development skills by developing a Professional Profile Website and deploying it on `github.io` cloud service. This project has general, non-technical, and technical requirements which are met as shown in the content below with screenshots.
 
-### General requirements (30 pts): 
+### General requirements: 
 
 + Create and deploy a personal website on GitHub cloud (github.io) as a professional profile with your resume, including your name, headshot, contact information, background, e.g., education, your experiences and skills (25 pts).
+
+ For this task, we followed the instructions as given in Lecture 6 slides and followed along with Professor Phung to create a new public repository named ```AdityaPawarr7.github.io``` in order to host our professional portfolio website. On top of that, I added in the experiences on my resume, my name, headshot, contact information, background, education, and skills as well.
+
+The link for the webpage is [https://AdityaPawarr7.github.io](https://AdityaPawarr7.github.io)
  ​
 + Create a link to a new HTML page to introduce this "Web Application Programming and Hacking" course and related hands-on projects (5 pts)
  ​
