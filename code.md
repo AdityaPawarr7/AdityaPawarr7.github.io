@@ -1,0 +1,431 @@
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Aditya Pawar's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Aditya Pawar</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience and Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#extra">Extracurricular Activities</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project1">Project 1 Tasks</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Aditya
+                        <span class="text-primary">Pawar</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        2902 Jefferson Avenue, OH 45219 · (513) 537 0127 ·
+                        <div id="email" onclick="showhideEmail()" style="cursor: pointer; display: inline;">
+                        Show My Email
+                    </div>
+                        <script src="email.js"></script>
+                    </div>
+                    <p class="lead mb-5">Hi! My name is Aditya Pawar and I'm a pre-junior majoring in Computer Science with an interest in Economics. My on-campus involvements include being a part of the Student Activities Board(SAB), College of Engineering and Applied Sciences Tribunal (CEAS Tribunal), & Foster Care Club! Welcome to my professional portfolio!</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href=https://www.linkedin.com/in/aditya-pawarr/><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href=https://github.com/AdityaPawarr7><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience and Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Image Deblurring Project</h3>
+                            <div class="subheading mb-3">Experential Education Program @ University of Cincinnati</div>
+                            <p>Developed a MATLAB program for linear image blur and deblurring under Prof. Reis, applying linear algebra concepts from "Deblurring Images- Matrices, Spectra, & Filtering." Presented research on image deblurring and findings at the Undergraduate Scholarly Showcase, achieving an impressive average reviewer score of 4 out of 5. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2024 - May 2024</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Lego EV3 Robot</h3>
+                            <div class="subheading mb-3">Engineering & Design Thinking (ENED 1100, ENED 1120) @ University of Cincinnati</div>
+                            <p>Led a team of 4 in designing, building, and programming a LEGO EV3 robot, demonstrating strong leadership and technical skills. Project participation broadened my programming expertise in LabVIEW, Excel (VBA), and Python. Effectively managed the project, resulting in a successful presentation showcasing the robot's capabilities and achieving an A in the class.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2022- April 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Banking System Management Project</h3>
+                            <div class="subheading mb-3">CS 1021C @ University of Cincinnati</div>
+                            <p>Led a team of 4 in designing, building, and programming a LEGO EV3 robot, demonstrating strong leadership and technical skills. Project participation broadened my programming expertise in LabVIEW, Excel (VBA), and Python. Effectively managed the project, resulting in a successful presentation showcasing the robot's capabilities and achieving an A in the class.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2023 - April 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Peer Career Coach</h3>
+                            <div class="subheading mb-3">Bearcat Promise Career Studio @ University of Cincinnati</div>
+                            <p>Provided personalized career coaching to students, guiding them on resume development, mock interviews, elevator pitches, and career exploration. Collaborated with a diverse team of 11 peer coaches and professional staff to manage records, schedule appointments, and maintain confidentiality. Enhanced understanding of career exploration, job search preparation, and interview skills while fostering meaningful connections.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2023 - Present</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Cincinnati</h3>
+                            <div class="subheading mb-3">Bachelor of Science in Computer Science</div>
+                            <p>GPA: 3.63 / 4.00 </p>
+                            <p>Releveant Coursework: Web Application Programming & Hacking (EECE 4005), Programming Languages (CS 3003), Discrete Structures (CS 2071), Intro to Computer Systems (CS 2011), Data Structures (CS2028C), Linear Algebra (MATH 2076), Info Security & Assurance (IT 2030C), Engineering Design Thinking I & II (ENED1100, ENED1120) </p>
+                            <p>Activities & Societies: Student Activities Board (Regulations & Violations Chair, Development Director), CEAS Tribunal (ESOC Chair), University Honors Program, Foster Care Club (Treasurer & Secretary), UC IPALs</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2022 - May 2027</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Hiranandani Foundation School Thane</h3>
+                            <div class="subheading mb-3">ICSE & ISC Certificates from CISCE</div>
+                            <p>GPA: 9.50 / 10.00 </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2016 - June 2022</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+
+                        <!-- Programming Languages Section -->
+                 <div class="subheading mb-3">Programming Languages</div>
+                    <ul class="list-inline dev-icons">
+                      <li class="list-inline-item"><i class="fab fa-java"></i> Java</li>
+                      <li class="list-inline-item"><i class="fab fa-js-square"></i> JavaScript</li>
+                      <li class="list-inline-item">C++</li>
+                      <li class="list-inline-item">C</li>
+                      <li class="list-inline-item"><i class="fab fa-python"></i> Python</li>
+                      <li class="list-inline-item">MATLAB</li>
+                      <li class="list-inline-item">LabVIEW</li>
+                      <li class="list-inline-item">VBA</li>
+                      <li class="list-inline-item"><i class="fas fa-database"></i> SQL</li>
+                      <li class="list-inline-item"><i class="fab fa-php"></i> PHP</li>
+                      <li class="list-inline-item"><i class="fab fa-css3-alt"></i> CSS</li>
+                    </ul>
+
+                    <!-- Technical Programs Section -->
+                    <div class="subheading mb-3">Technical Programs</div>
+                    <ul class="list-inline dev-icons">
+                      <li class="list-inline-item"><i class="fab fa-linux"></i> Linux</li>
+                      <li class="list-inline-item"><i class="fas fa-code"></i> Visual Studio Code</li>
+                      <li class="list-inline-item"><i class="fab fa-github"></i> GitHub</li>
+                      <li class="list-inline-item"><i class="fas fa-database"></i> MySQL</li>
+                      <li class="list-inline-item"><i class="fas fa-code"></i> Visual Studio</li>
+                      <li class="list-inline-item">BlueJ</li>
+                      <li class="list-inline-item"><i class="fab fa-python"></i> Spyder</li>
+                      <li class="list-inline-item"><i class="fab fa-windows"></i> HyperV</li>
+                      <li class="list-inline-item"><i class="fas fa-network-wired"></i> WireShark</li>
+                      <li class="list-inline-item"><i class="fas fa-file-alt"></i> Microsoft Office Suite</li>
+                      <li class="list-inline-item"><i class="fab fa-google"></i> Google Workspace</li>
+                      <li class="list-inline-item"><i class="fas fa-cube"></i> Blender</li>
+                      <li class="list-inline-item"><i class="fas fa-globe"></i> Web API Integration</li>
+                    </ul>
+                  </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Extra Curriculars-->
+            <section class="resume-section" id="extra">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Extracurricular Activities</h2>
+                    
+                     <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Regulations & Violations Chair</h3>
+                            <div class="subheading mb-3">Student Activities Board (SAB) @ University of Cincinnati</div>
+                            <p>Spearheaded the Student Activities Board (30 members) as Development Director, ensuring regulatory compliance, promotion, and effective operations of student organizations. Led a mentorship program for 15 new members, including creating weekly agendas, organizing retreats, and managing merchandise design/ordering. Facilitated the registration of 7 new organizations by collaborating directly with presidents and ensured compliance for all 147 organizations through check-ins and annual re-registration processing.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2022 - Present</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Engineering Student Organizations Council Chair (ESOC)</h3>
+                            <div class="subheading mb-3">CEAS Tribunal (College of Engineering and Applied Sciences) @ University of Cincinnati</div>
+                            <p>Lead and coordinate activities related to engineering student organizations, including relations with administration, student government, and funding collaborative initiatives.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2024 - Present</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Treasurer & Secretary </h3>
+                            <div class="subheading mb-3">Foster Care Club @ University of Cincinnati</div>
+                            <p>Serve as Treasurer and Secretary, managing financial resources and maintaining meeting minutes & preparing presentations in order to educate the students at UC about fostering!</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2024 - Present</span></div>
+                    </div>
+
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards </h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Dean's List (Spring 2023- Present)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            University Honors Program
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CEAS Global Outreach Scholarship
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+         <hr class="m-0" />
+        <!---Project 1 Tasks--->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <section class="resume-section" id="project1">
+                <div class="resume-section-content">
+                <h2 class="mb-5">Project 1 Tasks</h2>
+
+	
+
+		<!--- Flag Counter ---->
+
+                    <h3 class="mb-3">Page Tracker by the Number of Different Countries: </h3>
+
+                    <a href="http://s11.flagcounter.com/more/wPY"><img src="https://s11.flagcounter.com/count2/wPY/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+
+
+		<br> </br>
+
+		<!--- Digitial Clock ---->
+			
+                <h3 class="mb-3">Digital Clock: </h3>
+                <div id="digital-clock"></div>
+
+		<br> </br>
+
+		<!--- Analog Clock ---->
+
+                <h3 class="mb-3">Analog Clock: </h3>
+		        <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
+		        <script src="https://waph-uc.github.io/clock.js"></script>
+
+
+		<br> </br>
+
+		<!--- JokeAPI ---->
+			
+               
+		<h3 class="mb-3">Joke of the Day:</h3>
+			
+		 <div id="response">Loading joke...</div>
+		 <script>
+		  function getJoke() {
+	            $.get("https://v2.jokeapi.dev/joke/Any?type=single", function (result) {
+	                $("#response").html("A Random Joke: " + result.joke);
+	            });
+		    }
+	
+	   
+	        setInterval(getJoke, 60000); 
+	        getJoke();
+
+		 </script>
+
+		<br> </br>
+
+		<b> Disclaimer: The code/content generated above and below is produced using public/third-party services and APIs. I do not control or endorse the accuracy, reliability, or suitability of the generated content. Any reliance you place on such generated content is strictly at your own risk. I am not responsible for any errors, omissions, or inaccuracies in the generated output. Please review the terms of service and documentation of the respective APIs for more information on their usage and limitations. </b>
+
+		<!--- WeatherAPI ----->
+			
+		<br> </br>
+		    <h3 class="mb-3">Current Weather Info:</h3>
+		    <div id="weather-info">Loading weather info...</div>
+		  
+		
+		  <script>
+		    $(document).ready(function() {
+		      const apiKey = '6533ca69257e4792a33a9006602d3a96';
+		      const city = 'Cincinnati'; // City name
+		      const country = 'US'; // Country code
+		
+		      function displayWeatherInfo(data) {
+		        const weather = data.data[0];
+		        $("#weather-info").html(`
+		          <h4>Weather in ${weather.city_name}, ${weather.country_code}</h4>
+		          <p>Temperature: ${weather.temp}°C</p>
+		          <p>Description: ${weather.weather.description}</p>
+		          <img src="https://www.weatherbit.io/static/img/icons/${weather.weather.icon}.png" alt="${weather.weather.description}">
+		        `);
+		      }
+		
+		      $.getJSON(`https://api.weatherbit.io/v2.0/current?city=${city}&country=${country}&key=${apiKey}`, function(data) {
+		        console.log(data); // Log the response data
+		        displayWeatherInfo(data);
+		      })
+		      .fail(function() {
+		        $("#weather-info").html("Failed to fetch weather information.");
+		      });
+		    });
+		  </script>
+					
+                
+
+		 <!---Course Overview--->
+
+		  <h3 class="mt-3"> Web Applcation Programming and Hacking Course Overview </h3>
+                <a href="https://AdityaPawarr7.github.io/waph.html" target="_blank">Click Here to Access the Course
+                    Information</a>
+
+		
+		 <br> </br>
+
+		<!---Functionality of Choice- Alpine.js--->
+			
+		<h3 class="mt-3">Alpine.js - Functionality of Choice  </h3>
+
+		<p>  Alpine.js is a lightweight library that allows you to enhance interactivity in your web pages without the need for heavy frameworks. </p>
+		 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+	
+		<div x-data="{ isOpen: false }">
+	 	   <button @click="isOpen = !isOpen">Toggle to see hidden content!</button>
+		    <div x-show="isOpen">
+	    	    This content will be shown or hidden based on the value of isOpen. Great job finding out the hidden content, this would not have been possible without using Alpine.js!
+	  	  </div>
+		</div>
+
+
+		 
+         </section>
+
+
+       <script type="text/javascript">
+
+	       //jQuery Digital Clock
+	       
+		       $(document).ready(function() {
+			    function displayTime() {
+			        $('#digital-clock').html("Current time: " + new Date());
+			    }
+			    setInterval(displayTime, 500);
+			});
+
+	       
+	       
+	       $(document).ready(function() {
+		    var canvas = $('#analog-clock')[0];
+		    var ctx = canvas.getContext("2d");
+		    var radius = canvas.height / 2;
+		    ctx.translate(radius, radius);
+		    radius = radius * 0.90;
+		    setInterval(drawClock, 1000);
+		
+		    function drawClock() {
+		        drawFace(ctx, radius);
+		        drawNumbers(ctx, radius);
+		        drawTime(ctx, radius);
+		    }
+		});
+
+			
+
+
+		//Cookies!
+
+
+	function setCookie(name, value, days) {
+	    const expires = new Date();
+	    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+	    document.cookie = name + "=" + value + ";expires=" + expires.toUTCString() + ";path=/";
+	}
+	
+	function getCookie(name) {
+	    const cookieName = name + "=";
+	    const cookies = document.cookie.split(';');
+	    for (let i = 0; i < cookies.length; i++) {
+	        let cookie = cookies[i].trim();
+	        if (cookie.indexOf(cookieName) === 0) {
+	            return cookie.substring(cookieName.length, cookie.length);
+	        }
+	    }
+	    return null;
+	}
+	
+	function displayWelcomeMessage() {
+	    const lastVisitDate = getCookie("lastVisitDate");
+	    const currentDate = new Date().toLocaleString();
+	
+	    if (!lastVisitDate) {
+	        // First time visit
+	        alert('Welcome to my homepage for the first time!');
+	    } else {
+	        // Revisit
+	        alert('Welcome back! Your last visit was ' + lastVisitDate);
+	    }
+	    // Update the last visit date
+	    setCookie("lastVisitDate", currentDate, 365);
+	}
+	
+	window.onload = displayWelcomeMessage;
+	
+
+       </script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+	    
+        
+    </body>
+</html>
+```
