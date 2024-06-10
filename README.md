@@ -1,4 +1,4 @@
-## WAPH-Web Application Programming and Hacking
+`## WAPH-Web Application Programming and Hacking
 
 ## Instructor: Dr. Phu Phung
 
@@ -258,29 +258,73 @@ Alpine.js UI After being Toggled:
 + Two public Web APIs integration:
  _Ensure you include a disclaimer stating that the public/third-party services generate the generated contents below and that you are not responsible._
 
+Screenshot of the Disclaimer:
+
+\pagebreak
+
+Disclaimer Screenshot:
+
+![Disclaimer Screenshot](assets/disclaimer.jpg)
+
+
 1. Integrate the jokeAPI ([https://v2.jokeapi.dev/joke/Any](https://v2.jokeapi.dev/joke/Any), similar to Lab 2.2.d.i) with `Any` category of joke to display a new joke in your page every 1 minute.
 
-2. Integrate a public API with graphics and display that graphic/image in your page. Examples: [https://xkcd.com/info.0.json](https://xkcd.com/info.0.json), [https://www.weatherbit.io](https://www.weatherbit.io).
+
+Now, we have to integrate jokeAPI similar to Lab 2 but with the 'Any' category to display a joke and refresh it every 1 minute. We write the function getJoke() and set the interval to 6000 which is in milliseconds which is equal to 1 minute. The screenshots below show the code of jokeAPI and the implementation in UI. I can confirm that the 1 minute refresh works.
+
+\pagebreak
+
+jokeAPI Code Screenshot:
+
+![jokeAPI Code Screenshot](assets/jokecode.jpg)
+
+\pagebreak
+
+jokeAPI UI Screenshot:
+
+![jokeAPI UI Screenshot](assets/jokeui.jpg)
+
+
+3. Integrate a public API with graphics and display that graphic/image in your page. Examples: [https://xkcd.com/info.0.json](https://xkcd.com/info.0.json), [https://www.weatherbit.io](https://www.weatherbit.io).
+
+Now, we integrate the WeatherAPI into our Personal Portfolio Website. We do this by firstly signing up on the API's website to get a master key and then code the function displayWeatherInfo() in jQuery. The screenshots below show the code of the function and it's implementation in the website to show weather for Cincinnati.
+
+\pagebreak
+
+WeatherAPI Code Screenshot:
+
+![WeatherAPI Code Screenshot](assets/weathercode.jpg)
+
+\pagebreak
+
+WeatherAPI UI Screenshot:
+
+![WeatherAPI UI Screenshot](assets/weatherui.jpg)
+
 
 + Use JavaScript cookies to remember the client (10 pts): If first-time visit, display the message "Welcome to my homepage for the first time!"; otherwise, display the message "Welcome back! Your last visit was <the date/time of last visit>" (ensure that you update this value <the date/time of last visit> each time the same user visits -2pts if missing).
 
-## Report
 
-You must write a report using Markdown format following the template/outline provided in Lecture 2 ([https://github.com/phungph-uc/waph/blob/main/README-template.md](https://github.com/phungph-uc/waph/blob/main/README-template.md)) which should include the course name and instructor, your name and email together with your headshot (150x150 pixels), and sub-sections of the assignment's overview, and each task and sub-task.
+For this, we use the code given to us in the lecture slides and add more functions in order for it to work with our webpage. This code manages user visit information using cookies. When the webpage loads, the displayWelcomeMessage function is called, which retrieves the "lastVisitDate" cookie using the getCookie function. If the cookie does not exist, indicating a first-time visit, it shows an alert welcoming the user for the first time. If the cookie exists, it shows an alert with the date of the user's last visit. It then updates the "lastVisitDate" cookie with the current date and time, set to expire in 365 days, using the setCookie function.
 
-There should be an overview sub-section where you must write an overview of the assignment and the outcomes you learned from it. Include your website's clickable URL deployed on `github.io`. Also, include a direct clickable link to the project folder on GitHub.com so that it can be viewed when grading, for example, [https://github.com/phungph-uc/waph-phungph/tree/main/individual-project1](https://github.com/phungph-uc/waph-phungph/tree/main/individual-project1).
+The following screenshots show the code of how the cookies are used, and its implementation on a new browser (Microsoft Edge) on which I have not opened my portfolio site yet and then showing what happens when I reload it.
 
-For each sub-task, write a brief summary of how you completed it. You are welcome to include code snippets and screenshots to demonstrate the outcome; however, they are not required. **Please note that demo screenshots must include your name with proper captions and be visible, i.e., in high resolution, not too blurry, or with much blank space, for grading**. 
+\pagebreak
 
-Your report must be exported in PDF with its contents and screenshots correctly rendered in proper order. The PDF file should be named `your-username-waph-project1.pdf`, e.g., `phungph-waph-project1.pdf`, and uploaded to Canvas to be submitted by the deadline. 
+Cookie Code Screenshot:
+
+![Cookie Code Screenshot](assets/cookiescode.jpg)
 
 
-## Deliverables and Submission
+\pagebreak
 
-You need to submit **three** deliverables in PDF files for grading:
+First Time visiting the Webpage Screenshot:
 
-+ Your report mentioned above.
+![First Time visiting the Webpage](assets/cookiefirst.jpg)
 
-+ Your deployed website printed from a browser in PDF.
+\pagebreak
 
-+  The source code of your deployed website printed from a browser in PDF.
+Second Time visiting the Webpage Screenshot (Refreshing):
+
+![Second Time visiting the Webpage (Refreshing)](assets/cookiesecond.jpg)
+
