@@ -1,4 +1,4 @@
-![image](https://github.com/AdityaPawarr7/AdityaPawarr7.github.io/assets/169324262/1cf5659b-c28f-4d33-b34e-e9b1303747b0)![image](https://github.com/AdityaPawarr7/AdityaPawarr7.github.io/assets/169324262/09dee9e8-9f70-4631-84f8-e5167125bad1)# WAPH-Web Application Programming and Hacking
+## WAPH-Web Application Programming and Hacking
 
 ## Instructor: Dr. Phu Phung
 
@@ -240,19 +240,19 @@ Finally, in order to implement a functionality of our choice- we implement Alpin
 
 Alpine.js code: 
 
-![Alpine.js code](assets/alpinejs.jpg)
+![Alpine.js code](assets/alpinnejs.jpg)
 
 \pagebreak
 
 Alpine.js UI Before being Toggled:
 
-![Alpine.js UI Before Toggle](assets/alpinejsbefore.jpg)
+![Alpine.js UI Before Toggle](assets/alpinnejsbefore.jpg)
 
 \pagebreak
 
 Alpine.js UI After being Toggled:
 
-![Alpine.js UI Before Toggle](assets/alpinejsafter.jpg)
+![Alpine.js UI Before Toggle](assets/alpinnejsafter.jpg)
 
 
 + Two public Web APIs integration:
