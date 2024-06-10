@@ -347,13 +347,9 @@
 
 
        <script type="text/javascript">
-/*
-        function displayTime(){
-				document.getElementById('digital-clock').innerHTML = "Current time:" + new Date();
-			}
-			setInterval(displayTime,500);
-*/
 
+	       //jQuery Digital Clock
+	       
 		       $(document).ready(function() {
 			    function displayTime() {
 			        $('#digital-clock').html("Current time: " + new Date());
@@ -361,8 +357,10 @@
 			    setInterval(displayTime, 500);
 });
 
-	       /*
+	       
 			//code for the analog clock
+
+	       /*
 			var canvas= document.getElementById("analog-clock");
 			var ctx= canvas.getContext("2d");
 			var radius=canvas.height/2;
@@ -374,7 +372,24 @@
 				drawFace(ctx, radius);
 				drawNumbers(ctx, radius);
 				drawTime(ctx, radius);
-    */
+			}
+*/
+	       
+	       $(document).ready(function() {
+		    var canvas = $('#analog-clock')[0];
+		    var ctx = canvas.getContext("2d");
+		    var radius = canvas.height / 2;
+		    ctx.translate(radius, radius);
+		    radius = radius * 0.90;
+		    setInterval(drawClock, 1000);
+		
+		    function drawClock() {
+		        drawFace(ctx, radius);
+		        drawNumbers(ctx, radius);
+		        drawTime(ctx, radius);
+		    }
+		});
+
 			
 
 
